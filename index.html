@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <h1>SPLI<br>TTER</h1>
+  <div class="container">
+    <div class="column-1">
+      <div class="label">Bill</div>
+      <input type="text" id="bill-amount" class="input-light" placeholder="0" aria-label="bill amount">
+      <div class="label">Select Tip %</div>
+        <div class="tip" id="5">5%</div>
+        <div class="tip" id="10">10%</div>
+        <div class="tip" id="15">15%</div>
+        <div class="tip" id="25">25%</div>
+        <div class="tip" id="50">50%</div>
+       <input type="text" id="custom-tip-amount" class="input-light" placeholder="Custom" aria-label="custom tip amount">
+       
+
+      <div class="label">Number of People</div>
+      <input type="text" id="nbr-people" class="input-light" placeholder="0" aria-label="number of people">
+    </div>
+    <div class="column-2">
+      <div class="label-white">Tip Amount</div>
+      <div class="label-dark">/ person</div>
+      <div id="tip-amount" class="totals">$0.00</div>
+
+      <div class="label-white">Total</div>
+      <div class="label-dark">/ person</div>
+      <div id="total" class="totals">$0.00</div>
+
+      <button class="disabled" disabled id="reset-button" aria-label="reset button">Reset</button>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
